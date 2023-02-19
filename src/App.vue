@@ -1,26 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <img alt="Vue logo" src="./assets/logo.png">
+  <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+	<TestComponent str="My first component wow i like VUE"></TestComponent>
+
+	<h1>test slider</h1>
+	<MySlider @click="handleClick"></MySlider>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//import HelloWorld from './components/HelloWorld.vue'
+import TestComponent from './components/TestComponent.vue'
+import MySlider from './components/MySlider.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+		TestComponent,
+		MySlider
+    // HelloWorld
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
